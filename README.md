@@ -1,4 +1,4 @@
-# scrud
+# This is a simple crud.
 
 ## Endpoints: 
 ### GET
