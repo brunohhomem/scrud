@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProductDTO {
+public class ProductsDTO {
     private String name;
     private boolean isActive;
     private LocalDateTime createdAt;
