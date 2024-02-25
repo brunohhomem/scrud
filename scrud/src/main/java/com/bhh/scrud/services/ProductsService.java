@@ -31,6 +31,13 @@ public class ProductsService {
         return new ProductsDTO(entity);
     }
 
+    @Transactional
+    public ProductsDTO insert(ProductsDTO dto) {
+        Products entity = new Products();
+        copyDtoToEntity(dto, entity);
+        entity = repository.save(entity);
+        return new ProductsDTO(entity);
+    }
 
     private void copyDtoToEntity(ProductsDTO dto, Products entity) {
         entity.setName(dto.getName());

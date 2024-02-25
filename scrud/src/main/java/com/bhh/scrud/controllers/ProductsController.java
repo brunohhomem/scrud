@@ -34,4 +34,10 @@ public class ProductsController {
         dto = service.update(id, dto);
         return ResponseEntity.ok().body(dto);
     }
+
+    @PostMapping
+    public ResponseEntity<ProductsDTO> insert(@RequestBody @Valid ProductsDTO dto){
+        dto = service.insert(dto);
+        return ResponseEntity.ok().body(dto);
+    }
 }
