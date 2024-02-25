@@ -23,7 +23,7 @@ public class Products {
     private String name;
 
     @Column(nullable = false, columnDefinition = "boolean default true")
-    private boolean isActive;
+    private Boolean isActive;
 
     @CreationTimestamp
     private LocalDateTime createdAt;
