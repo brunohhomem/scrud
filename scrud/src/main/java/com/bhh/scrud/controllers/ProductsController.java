@@ -40,4 +40,10 @@ public class ProductsController {
         dto = service.insert(dto);
         return ResponseEntity.ok().body(dto);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<ProductsDTO> delete(@PathVariable Long id){
+        service.delete(id);
+        return ResponseEntity.noContent().build();
+    }
 }

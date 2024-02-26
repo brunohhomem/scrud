@@ -39,6 +39,10 @@ public class ProductsService {
         return new ProductsDTO(entity);
     }
 
+    public void delete(Long id){
+        repository.deleteById(id);
+    }
+
     private void copyDtoToEntity(ProductsDTO dto, Products entity) {
         entity.setName(dto.getName());
         entity.setIsActive(dto.getIsActive());
