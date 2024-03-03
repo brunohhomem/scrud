@@ -1,6 +1,10 @@
 # This is a simple crud.
 
 ## Endpoints: 
+
+ <details align="left"> 
+  <summary><b>Products</b></summary> 
+
 ### GET
 	- http://localhost:8080/products
 	- http://localhost:8080/products/5
@@ -23,5 +27,12 @@
 
 ### DELETE
 	- http://localhost:8080/products/5
+</details>
 
-Finish?
+ <details align="left"> 
+  <summary><b>Category</b></summary> 
+
+### GET
+	- http://localhost:8080/categories
+	- http://localhost:8080/categories/2
+</details>
