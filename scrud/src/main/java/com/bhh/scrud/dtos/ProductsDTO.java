@@ -15,12 +15,9 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductsDTO {
+
     private Long id;
-
-    @Size(min = 3, max = 60, message = "Nome deve ter entre 3 e 60 caracteres.")
-    @NotBlank(message = "Campo requerido.")
     private String name;
-
     private Boolean isActive;
     private LocalDateTime createdAt;
 

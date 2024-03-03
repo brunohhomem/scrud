@@ -23,3 +23,8 @@ INSERT INTO products (name) VALUES ('PC Gamer Er');
 INSERT INTO products (name) VALUES ('PC Gamer Min');
 INSERT INTO products (name) VALUES ('PC Gamer Boo');
 INSERT INTO products (name) VALUES ('PC Gamer Foo');
+
+INSERT INTO category (name) VALUES ('Computador');
+INSERT INTO category (name) VALUES ('Eletronicos');
+INSERT INTO category (name) VALUES ('Periféricos');
+

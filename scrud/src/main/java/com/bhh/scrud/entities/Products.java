@@ -2,6 +2,7 @@ package com.bhh.scrud.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -19,7 +20,8 @@ public class Products {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Name must have at least 3 characters.")
+    @Size(min = 3, max = 60, message = "Nome deve ter entre 3 e 60 caracteres.")
+    @NotBlank(message = "Campo requerido.")
     private String name;
 
     @Column(nullable = false, columnDefinition = "boolean default true")
