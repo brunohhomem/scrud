@@ -30,6 +30,12 @@ public class CategoryController {
         return ResponseEntity.ok().body(category);
     }
 
+    @PostMapping
+    public ResponseEntity<CategoryDTO> insert(@RequestBody @Valid CategoryDTO dto){
+        dto = service.insert(dto);
+        return ResponseEntity.ok().body(dto);
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<CategoryDTO> update(@PathVariable Long id, @RequestBody @Valid CategoryDTO dto){
         dto = service.update(id, dto);
