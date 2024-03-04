@@ -2,8 +2,8 @@
 
 ## Endpoints: 
 
- <details align="left"> 
-  <summary><b>Products</b></summary> 
+<details align="left"> 
+	<summary><b>Products</b></summary> 
 
 ### GET
 	- http://localhost:8080/products
@@ -27,12 +27,31 @@
 
 ### DELETE
 	- http://localhost:8080/products/5
+	
 </details>
 
- <details align="left"> 
-  <summary><b>Category</b></summary> 
+<details align="left">
+	<summary><b>Category</b></summary> 
 
 ### GET
 	- http://localhost:8080/categories
 	- http://localhost:8080/categories/2
+	
+### POST
+	- http://localhost:8080/categories
+	
+	{
+		"name": "GAMER"
+	}
+
+### PUT
+	- http://localhost:8080/categories/2
+
+	{
+		"name": "GAMER"
+	}
+
+### DELETE
+	- http://localhost:8080/categories/2
+	
 </details>
